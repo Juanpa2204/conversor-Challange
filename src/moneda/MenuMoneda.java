@@ -2,8 +2,9 @@ package moneda;
 
 import javax.swing.*;
 
-import static moneda.Divisa.convertirDolaresAPesos;
+import static moneda.Divisa.divisaAPesos;
 import static moneda.Pesos.pesosADivisa;
+
 
 public class MenuMoneda {
     public static void menuDivisa(){
@@ -12,11 +13,11 @@ public class MenuMoneda {
 
         if (monedaSeleccionada != null) {
             switch (monedaSeleccionada) {
-                case "Convertir de pesos a dólar":
+                case "Convertir de pesos a divisa":
                     pesosADivisa();
                     break;
                 case "Convertir de divisa a pesos":
-                    convertirDolaresAPesos();
+                    divisaAPesos();
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opción no válida");
