@@ -1,37 +1,51 @@
 package moneda;
 
 import enums.Moneda;
-import enums.Moneda.*;
 import javax.swing.*;
+
+import static javax.swing.JOptionPane.showMessageDialog;
+import static menu.MenuPrincipal.menuPrincipal;
 
 public class Divisa implements ConversorDeMoneda{
 
     @Override
-    public void convertirAPesos(String nombreMoneda) {
-        ConversorDeMoneda.super.convertirAPesos(nombreMoneda);
+    public void convertirAPesos(Moneda monedaDestino) {
+        ConversorDeMoneda.super.convertirAPesos(monedaDestino);
     }
 
     public static void divisaAPesos() {
-        String[] pesosA = {"Convertir de dólar a pesos", "Convertir de euro a pesos", "Convertir de libra esterlina a pesos", "Convertir de yuan a pesos"};
+        String[] pesosA = {"Convertir dolar", "Convertir euro", "Convertir libra esterlina", "Convertir yuan"};
         String monedaSeleccionada = (String) JOptionPane.showInputDialog(null, "Seleccione una opción", "Conversor de Moneda", JOptionPane.QUESTION_MESSAGE, null, pesosA, pesosA[0]);
-
+        boolean flag = true;
+        while (flag) {
         if (monedaSeleccionada != null) {
             switch (monedaSeleccionada) {
-                case "Convertir de dólar a pesos":
-                    new Divisa().convertirAPesos(String.valueOf(Moneda.PESO));
+                case "Convertir dolar":
+                   new  Divisa().convertirAPesos(Moneda.DOLAR);
                     break;
-                case "Convertir de euro a pesos":
-                    new Pesos().convertirAPesos(String.valueOf(Moneda.EURO));
+                case "Convertir euro":
+                   new Divisa().convertirAPesos(Moneda.EURO);
                     break;
-                case "Convertir de libra esterlina a pesos":
-                    new Pesos().convertirAPesos(String.valueOf(Moneda.LIBRA_ESTERLINA));
+                case "Convertir libra esterlina":
+                   new Divisa().convertirAPesos(Moneda.LIBRA_ESTERLINA);
                     break;
-                case "Convertir de yuan a pesos":
-                    new Pesos().convertirAPesos(String.valueOf(Moneda.YUAN));
+                case "Convertir yuan":
+               new Pesos().convertirAPesos(Moneda.YUAN);
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opción no válida");
             }
+            int opcion = JOptionPane.showConfirmDialog(null, "¿Desea continuar?", "Confirmar", JOptionPane.YES_NO_OPTION);
+            if (opcion == JOptionPane.NO_OPTION) {
+                flag = false;
+                showMessageDialog(null, "programa finalizado");
+            }
+        } else {
+            flag = false;
+            showMessageDialog(null, "programa finalizado");
+        }
+            menuPrincipal();
+        }
         }
     }
-}
+
