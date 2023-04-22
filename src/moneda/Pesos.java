@@ -1,6 +1,7 @@
 package moneda;
 
 import enums.Moneda;
+
 import javax.swing.*;
 
 import static javax.swing.JOptionPane.showMessageDialog;
@@ -35,18 +36,8 @@ public class Pesos implements ConversorDeMoneda {
                     default:
                         JOptionPane.showMessageDialog(null, "Opción no válida");
                 }
-                int opcion = JOptionPane.showConfirmDialog(null, "¿Desea continuar?", "Confirmar", JOptionPane.YES_NO_OPTION);
-                if (opcion == JOptionPane.NO_OPTION) {
-                    flag = false;
-                    showMessageDialog(null, "programa finalizado");
-                }
-            } else {
-                flag = false;
-                showMessageDialog(null, "programa finalizado");
             }
-            menuPrincipal();
         }
-
     }
 }
 
