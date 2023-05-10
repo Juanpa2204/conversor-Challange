@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0680908-6dc6-46f7-8fc7-4c99adb64573" name="Changes" comment="3er comit, enums, metodos convertir, menus.">
-      <change afterPath="$PROJECT_DIR$/src/services/Repetidor.java" afterDir="false" />
+    <list default="true" id="a0680908-6dc6-46f7-8fc7-4c99adb64573" name="Changes" comment="funcion para terminar el programa">
+      <change afterPath="$PROJECT_DIR$/src/menu/MenuTemperatura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/temperatura/servicesTemperatura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/MenuMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MenuMoneda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MenuPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moneda/Divisa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moneda/Divisa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moneda/Pesos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moneda/Pesos.java" afterDir="false" />
@@ -87,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682039988957</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="funcion para terminar el programa">
+      <created>1682125326630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682125326630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +112,7 @@
     <MESSAGE value="1er comit, menuMoneda, divisa." />
     <MESSAGE value="2do comit, enums, interfaz." />
     <MESSAGE value="3er comit, enums, metodos convertir, menus." />
-    <option name="LAST_COMMIT_MESSAGE" value="3er comit, enums, metodos convertir, menus." />
+    <MESSAGE value="funcion para terminar el programa" />
+    <option name="LAST_COMMIT_MESSAGE" value="funcion para terminar el programa" />
   </component>
 </project>

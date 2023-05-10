@@ -1,13 +1,7 @@
 package moneda;
 
 import enums.Moneda;
-import menu.MenuPrincipal;
-import services.Repetidor;
-
 import javax.swing.*;
-
-import static javax.swing.JOptionPane.showMessageDialog;
-import static menu.MenuPrincipal.menuPrincipal;
 
 public class Divisa implements ConversorDeMoneda {
 
@@ -17,8 +11,7 @@ public class Divisa implements ConversorDeMoneda {
     }
 
     public static void divisaAPesos() {
-         boolean flag = true;
-        while (flag) {
+
             String[] pesosA = {"Convertir dolar", "Convertir euro", "Convertir libra esterlina", "Convertir yuan"};
             String monedaSeleccionada = (String) JOptionPane.showInputDialog(null, "Seleccione una opción", "Conversor de Moneda", JOptionPane.QUESTION_MESSAGE, null, pesosA, pesosA[0]);
 
@@ -40,8 +33,7 @@ public class Divisa implements ConversorDeMoneda {
                         JOptionPane.showMessageDialog(null, "Opción no válida");
                 }
             }
-            flag= Repetidor.intentaRepetir();
         }
     }
-}
+
 
